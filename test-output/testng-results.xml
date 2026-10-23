@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[openBrowser]]>
@@ -8,131 +8,55 @@
       <![CDATA[login]]>
     </line>
     <line>
+      <![CDATA[Create Customer]]>
+    </line>
+    <line>
+      <![CDATA[HDFC_001is created successfully]]>
+    </line>
+    <line>
+      <![CDATA[logOut]]>
+    </line>
+    <line>
       <![CDATA[closeBrowser]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-10-22T23:34:31 IST" name="Default suite" finished-at="2026-10-22T23:35:23 IST" duration-ms="51615">
+  <suite started-at="2026-10-23T09:38:06 IST" name="Default suite" finished-at="2026-10-23T09:38:19 IST" duration-ms="12853">
     <groups>
     </groups>
-    <test started-at="2026-10-22T23:34:31 IST" name="Default test" finished-at="2026-10-22T23:35:23 IST" duration-ms="51615">
+    <test started-at="2026-10-23T09:38:06 IST" name="Default test" finished-at="2026-10-23T09:38:19 IST" duration-ms="12853">
       <class name="com.actitime.testscript.CustomerModule">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-22T23:34:31 IST" name="openBrowser" finished-at="2026-10-22T23:35:21 IST" duration-ms="49771" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-23T09:38:06 IST" name="openBrowser" finished-at="2026-10-23T09:38:10 IST" duration-ms="4255" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[openBrowser]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-22T23:35:21 IST" name="login" finished-at="2026-10-22T23:35:22 IST" duration-ms="1240" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send must be set
-at selenium.server@4.51.0/org.openqa.selenium.internal.Require.nonNull(Require.java:68)
-at selenium.server@4.51.0/org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at selenium.server@4.51.0/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-at com.actitime.pom.LoginPage.setLogin(LoginPage.java:23)
-at com.actitime.generic.BaseClass.login(BaseClass.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-23T09:38:10 IST" name="login" finished-at="2026-10-23T09:38:12 IST" duration-ms="2155" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[login]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="testCreateCustomer()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-22T23:35:22 IST" name="testCreateCustomer" finished-at="2026-10-22T23:35:22 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send must be set]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send must be set
-at selenium.server@4.51.0/org.openqa.selenium.internal.Require.nonNull(Require.java:68)
-at selenium.server@4.51.0/org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at selenium.server@4.51.0/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-at com.actitime.pom.LoginPage.setLogin(LoginPage.java:23)
-at com.actitime.generic.BaseClass.login(BaseClass.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        <test-method signature="testCreateCustomer()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-23T09:38:12 IST" name="testCreateCustomer" finished-at="2026-10-23T09:38:16 IST" duration-ms="3780" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Create Customer]]>
+            </line>
+            <line>
+              <![CDATA[HDFC_001is created successfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testCreateCustomer -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-22T23:35:22 IST" name="logOut" finished-at="2026-10-22T23:35:22 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-23T09:38:16 IST" name="logOut" finished-at="2026-10-23T09:38:18 IST" duration-ms="2154" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[logOut]]>
+            </line>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-22T23:35:22 IST" name="closeBrowser" finished-at="2026-10-22T23:35:23 IST" duration-ms="461" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.actitime.testscript.CustomerModule@1018bde2]" started-at="2026-10-23T09:38:18 IST" name="closeBrowser" finished-at="2026-10-23T09:38:19 IST" duration-ms="422" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[closeBrowser]]>
